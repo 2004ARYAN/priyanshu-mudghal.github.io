@@ -1,0 +1,560 @@
+<html>
+	<head>
+		<style>
+			*{
+			margin: 0;
+			padding: 0;
+			}
+			.nav{
+			width:100%;
+			}
+			.nav ul li a{
+			text-decoration:none;
+			color:white;
+			font-size:20px;
+			}
+			.nav ul li{
+			list-style-type:none;
+			float:left;
+			margin:15px;
+			}
+			#nav2{
+			font-size:50px;
+			color:white;
+			text-decoration:none;
+			}
+			#nav1{
+			background-color:black;
+		/*	position:fixed; */
+			padding: 30px 0;
+			height:70px;
+		    display:flex;
+		    align-items:center;
+		    justify-content:space-between;
+		    max-width:1359.5px;     
+		    margin:auto; 
+		    padding:0 80px;
+		    }
+			.nav3:hover{
+			color:red;
+			}
+			
+						/* ------------------ */
+			#home{
+			padding:100px 0;
+			background-color:black;
+			height:500px;
+			}
+			.home-content{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+			justify-content:space-between;
+			} 
+			.column-left{
+			width:55%;
+			}
+			.column-right{
+			width:45%;
+			color:white; 
+			}
+			.width{
+			max-width:1400px;
+		    margin:auto;
+		    padding:0 80px;
+			margin:auto 0  auto 40px;
+		    }
+			.text-1{
+			color:green;
+			text-shadow:-4px 1px 2px  lightgreen;
+			}
+			.text-2{
+			color:red;
+			text-shadow:-4px 1px 2px  red;
+			}
+			.text-3{
+			color:blue;
+			text-shadow:-4px 1px 2px blue;
+			}
+			.home-content img{
+			width:800px;
+			height:400px;
+			object-fit:cover;
+			}
+			                                   /* ------------------ */
+			.about-content img{
+			width:400px;
+			height:400px;
+			object-fit:cover;
+			}
+			#about{
+			padding:100px 0;
+			}
+			.about-content{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+			justify-content:space-between;
+			} 
+			.column-left-1{
+			width:45%;
+			}
+			.column-right-1{
+			width:55%;
+			}
+			.text{
+			font-size:35px;
+			font-weight:600;
+			margin-bottom:10px;
+		/*	background-color:blue;   */
+			}
+			.column-left-1 p{
+			text-align:justify;
+			color:green;
+			background-color:bisque;
+			}
+			.width h2{
+			font-size:40px;
+			text-align:center;
+			margin-bottom:60px;
+			padding-bottom:20px;
+			background-color:grey;
+			}
+			.btn{
+			background-color:#f9004d;
+			color:white;
+			text-decoration:none;
+			border: 2px solid transparent;
+			font-weight:bold;
+			padding:1px 25px;
+			border-radius:30px;
+			transition: transform .4s;
+			}
+			.btn:hover{
+			background-color:transparent;
+			border: 2px solid #f9004D;
+			cursor:pointer;
+			color:black;
+			}
+			                              /* ---------------- */
+			.width1{
+			max-width:1400px;
+		    margin:auto;
+		    padding:0 80px;
+			margin:auto 0  auto 40px;
+		    }
+			.width1 h2{
+			padding-top:30px;
+			font-size:40px;
+			text-align:center;
+			margin-bottom:60px;
+			padding-bottom:20px;
+			color:white;
+			text-shadow:-4px 0px 2px  grey;
+			}
+			.ach{
+			background: url("pic/p4.jpg") no-repeat center;
+			background-size:cover;
+			height:800px;
+			}
+			.box-1{
+			width:100%;
+			border:solid;
+			border-radius:30px;
+			border-color:white;
+			height:90px;
+			align-item:center;
+			margin-top:40px;
+			margin-bottom:10px;
+			}
+			.box-1 p{
+			color:white;
+			font-size:40px;
+			padding:7px 15px 0 20px;   
+			
+			}
+			.box-1 a{
+			padding:0px 0 0px 250;
+			text-shadow:-1px 1px 1px  blue;
+			}
+			.box-1 ul li{
+			list-style-type:none;
+			float:left;
+			margin:15px;
+			}
+												/* --------------- */
+            .detail-content p{
+			text-align:justify;
+			color:red;
+			}
+			#blog{
+			height:400px;
+            margin-top:20px;
+            text-align:center;
+            }
+			#blog div{
+			width:32.5%;
+			height:600px;
+			border:1px solid;
+			border-color:white;
+			float:left;
+			margin-left:10px;
+			}
+			.detail-content p{
+			text-align:center;
+			font-size:50px;
+			margin-top:20px;
+			color:white;
+			text-shadow:-4px 2px 2px  grey;
+			}
+			.detail-content h1{
+			margin-top:25px;
+			color:white;
+			}
+			.detail-content h2{
+			margin-top:25px;
+			color:white;
+			}
+			.detail-content img{
+			margin-top:20px;
+			}
+			.detail{
+			background-color:black;
+			height:750px;
+			padding-top:25px;
+			}
+			.width2 h2{
+			font-size:40px;
+			text-align:center;
+			margin-bottom:60px;
+			padding-bottom:20px;
+			text-shadow:-4px 2px 2px  grey;
+			}
+			                           /* ----------------- */
+			.detail-content-1 p{
+			text-align:justify;
+			color:red;
+			}
+			#blog-1{
+			height:200px;
+            margin-top:20px;
+            text-align:center;
+			padding-left:220px;
+			
+            }
+			#blog-1 div{
+			width:25%;
+			height:300px;
+			border:3px solid;
+			border-color:white;
+			float:left;
+			margin-left:10px;
+			
+			}
+			.detail-content-1 p{
+			text-align:center;
+			font-size:15px;
+			margin-top:60px;
+			color:white;
+			text-shadow:-4px 2px 2px  grey;
+			}
+			.detail-content-1 h1{
+			margin-top:25px;
+			color:white;
+			}
+			.detail-content-1 h2{
+			margin-top:25px;
+			color:white;
+			}
+			
+			.detail-1{
+			background-color:black;
+			height:480px;
+			padding-top:25px;
+			}
+			.width2 h2{
+			font-size:40px;
+			text-align:center;
+			margin-bottom:60px;
+			padding-bottom:20px;
+			text-shadow:-4px 2px 2px  grey;
+			}
+									   /* ------------------ */
+			.width3{
+			max-width:1400px;
+		    margin:auto;
+		    padding:0 80px;
+			margin:auto 0  auto 40px;
+		    }
+			.about1-content img{
+			width:400px;
+			height:400px;
+			object-fit:cover;
+			}
+			#about1{
+			padding:100px 0;
+			}
+			.about1-content{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+			justify-content:space-between;
+			} 
+			.column-left-2{
+			width:45%;
+			}
+			.column-right-2{
+			width:55%;
+			}
+			.text{
+			font-size:35px;
+			font-weight:600;
+			margin-bottom:10px;
+		/*	background-color:blue;   */
+			}
+			.column-left-2 p{
+			text-align:justify;
+			color:green;
+			background-color:bisque;
+			}
+			.width3 h2{
+			font-size:40px;
+			text-align:center;
+			margin-bottom:60px;
+			padding-bottom:20px;
+			background-color:grey;
+			}
+			.column-right-2 a{
+			text-decoration:none;
+		/*	background-color:black;   */
+			color:green;
+			text-shadow:-2px 1px 1px  lightgreen;
+			border:solid;
+			}
+			            /* ------------------- */
+			.contact-content-1 p{
+			text-align:justify;
+			color:red;
+			}
+			#blog-2{
+			height:200px;
+            margin-top:10px;
+            text-align:center;
+			padding-left:380px;
+            }
+			#blog-2 div{
+			width:20%;
+			height:200px;
+			border:3px solid;
+			border-color:grey;
+			float:left;
+			margin-left:10px;
+			background-color:white;
+			}
+			.contact-content-1 p{
+			text-align:center;
+			font-size:25px;
+			margin-top:30px;
+			color:black;
+			}
+			.contact-content-1 h1{
+			margin-top:25px;
+			color:black;
+			}
+			.contact-content-1 h4{
+			margin-top:25px;
+			color:black;
+			}
+			.contact{
+			background-color:black;
+			height:300px;
+			padding-top:15px;
+			}
+			.width2 h2{
+			font-size:40px;
+			text-align:center;
+			margin-bottom:10px;
+			padding-bottom:20px;
+			text-shadow:-4px 2px 2px  grey;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="nav" id="nav1">
+			<div class="nav2" id="nav2">GP</div>
+				<ul>
+					<li><a href="#home" class="nav3">Home</a></li>
+					<li><a href="#about" class="nav3">About Me</a></li>
+					<li><a href="#ach" class="nav3">Achievment</a></li>
+					<li><a href="#detail" class="nav3">Education detail</a></li>
+					<li><a href="#contact" class="nav3">Contact Me</a></li>
+				</ul>
+		</nav>
+		
+		<div class="home" id="home">
+		<div class="width">
+			<div class="home-content">
+				<div class="column-right">
+					<p class="text-1" style=font-size:50px >Hi,my name is</p>
+					<p class="text-2" style=font-size:50px>Priyanshu Mudgal</p>
+					<p class="text-3" style=font-size:50px>And i'm a student</p>
+				</div>
+				<div class="column-left">
+					<img src="pic/pic2.jpg.crdownload">
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="about" id="about">
+		    <div class="width">
+			  <h2 class="tittle">About me</h2>
+			    <div class="about-content">
+				    <div class="column-left-1">
+						<img src="pic/pic1.jpg" >
+					</div>
+					<div class="column-right-1">
+					    <span class="text">I'm Priyanshu</span>
+						<p>I am basically from haryana. I have done my schooling from gurgaon. I am currently pursuing in B.tech in AIML branch from dronacharya college of engineering. I am currently working on web designing and i have fair knowledge about computer language that is c language. My strength is i am good learner,focused. I believe that my greatest strength is the ability to solve problem quickly and efficently. I can work efficiently under pressure and can give maximum output. My weakness is that i am over hard working and i usually refer to complete task on its own without any outside help which put me in unncessary pressure.My goal is to first get a job in well known company after that i want to run a startup. </p>
+					    <a href="C:\Users\Priyanshul\OneDrive\Desktop\gp\pic\PRIYANSHU R.docx" class="btn">View CV</a>
+					</div>      
+				</div>
+			</div>
+		</div>
+		
+		<div class="ach" id="ach">
+			<div class="width1">
+				<h2 class="title">Achievement</h2>
+					<div class="ach-content">
+						<div class="box-1">
+							<ul>
+								<li><p>2nd Position in Hack-o-relay-Dronathron</p></li>
+								<li><a href="C:\Users\Priyanshul\OneDrive\Desktop\gp\pic\c2.jpeg">View Certificate</a></li>
+							</ul>
+						</div>
+						<div class="box-1">
+							<ul>
+								<li><p>1st Position in- THE MAVERICKS ........</p></li>
+								<li><a href="C:\Users\Priyanshul\OneDrive\Desktop\gp\pic\c3.jpeg">View Certificate</a></li>
+							</ul>
+						</div>
+						<div class="box-1">
+							<ul>
+								<li><p>NCAT ( certificate of excellence)............</p></li>
+								<li><a href="C:\Users\Priyanshul\OneDrive\Desktop\gp\pic\c1.PDF">View Certificate</a></li>
+							</ul>
+						</div>
+						<div class="box-1">
+							<ul>
+								<li><p>1st Position in volleyball competition .....</p></li>
+								<li><a href="#">View Certificate</a></li>
+							</ul>
+						</div>
+						<div class="box-1">
+							<ul>
+								<li><p>Worked as INTERN at YOUNITY...........</p></li>
+								<li><a href="C:\Users\Priyanshul\OneDrive\Desktop\gp\pic\c4.pdf">View Certificate</a></li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="detail" id="detail">
+		    <div class="width2">
+			  <h2 class="tittle" style=color:#fff>Education Detail</h2>
+			</div>
+		
+			    <div class="detail-content" id="blog">
+				    <div>
+				        <h1 style=font-size:50px>10th CLASS</h1>
+				        <img src="pic/viv.jpg">
+				        <p>Marks:431</p>
+						<p>Total Marks:500<p>
+						<p>Percenatge:87%</p>
+				        </p>
+	                </div>	
+                    <div>
+				        <h2 style=font-size:50px>12th CLASS</h2>
+				        <img src="pic/md.jpg">
+				        <p>Marks:378</p>
+				        <p>Total Marks:500</p>
+						<p>Percentage:77%</p>
+	                </div>
+					<div>
+				        <h2 style=font-size:50px>1st sem</h2>
+				        <img src="pic/dce.jpg">
+				        <p>Marks:434</p>
+				        <p>Total Marks:550</p>
+						<p>SGPA: 8.4</p>
+	                </div>
+				</div>
+		</div>
+		
+		<div class="detail-1" id="detail-1">
+		    <div class="width2">
+			  <h2 class="tittle" style=color:#fff>Skills</h2>
+			</div>
+		
+			    <div class="detail-content-1" id="blog-1">
+				    <div class="b1">
+				        <h1 style=font-size:50px>C Language</h1>
+				        <p>C is an imperative procedural language supporting structured programming, lexical variable scope, and recursion, with a static type system.</p>
+	                </div>	
+                    <div>
+				        <h2 style=font-size:50px>HTML</h2>
+				        <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page</p>
+				        
+	                </div>
+					<div>
+				        <h2 style=font-size:50px>CSS</h2>
+				        
+				        <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work.</p>
+				       
+						
+	                </div>
+				</div>
+		</div>
+		
+		<div class="about1" id="about1">
+		    <div class="width3">
+			  <h2 class="tittle">Coumpter skills</h2>
+			    <div class="about1-content">
+				    <div class="column-left-2">
+					<img src="pic/c.jpeg" alt="">
+					</div>
+					<div class="column-right-2">
+					    <div class="text">C Language</div>
+						<p>&#9824 C is programming language developed by "Denish Ritchie" AT &T" laboratory  it is generally supporting structured programming language like variable scop,recursion ,with a static type system it can use by design provides constructs that efficiently to typical machine instructor it can specify the various functions variables ,looping statements it is also a low level language. </p>
+					    <p>&#9824 C is considered as a middle-level language because it supports the feature of both low-level and high-level languages. C language program is converted into assembly code, it supports pointer arithmetic (low-level), but it is machine independent (a feature of high-level<p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contact" id="contact">
+		    <div class="width2">
+			  <h2 class="tittle" style=color:#fff>Contact Me</h2>
+			</div>
+		
+			    <div class="contact-content-1" id="blog-2">
+				    <div>
+				        <h1 style=font-size:50px>Phone No.</h1>
+				        <p>+91 9319710134</p>
+	                </div>	
+                    <div>
+				        <h4 style=font-size:50px>Instagram</h4>
+				        <p>priyanshu.x4</p>
+				        
+	                </div>
+					<div>
+				        <h4 style=font-size:50px>Address</h4>
+				        
+				        <p>Rajendra Park, House no. B54, Gurugram, Haryana</p>
+				       
+						
+	                </div>
+				</div>
+		</div>
+	</body>
+</html>
